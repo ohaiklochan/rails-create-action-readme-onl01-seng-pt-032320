@@ -77,3 +77,20 @@ No template found for PostsController#create, rendering head :no_content
 Completed 204 No Content in 69ms (ActiveRecord: 55.8ms)
 
 
+Started GET "/posts/new" for 167.172.214.64 at 2020-08-12 16:10:18 +0000
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 167.172.214.64 at 2020-08-12 16:10:20 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6KzGGbJ/1qKvmbuIT6nV1dTogAvOamNITS2JlSc+WbXx6GhQrPjAVInQC1BIAeQ0NVBMF4WpOAXSPjYOQvPv0w==", "title"=>"", "description"=>"", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", ""], ["description", ""], ["created_at", "2020-08-12 16:10:20.165267"], ["updated_at", "2020-08-12 16:10:20.165267"]]
+  [1m[35m (89.8ms)[0m  [1m[36mcommit transaction[0m
+No template found for PostsController#create, rendering head :no_content
+Completed 204 No Content in 103ms (ActiveRecord: 90.2ms)
+
+
